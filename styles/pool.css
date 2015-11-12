@@ -24,13 +24,6 @@
   justify-content: space-between;
 }
 
-.grouptitle {
-  padding: 8px 16px;
-  font-weight: bold;
-  background-color: #EEEEEE;
-  border-bottom: 1px solid #E0E0E0;
-}
-
 .groupitem {
   padding: 6px 8px;
   height: 72px;
@@ -84,7 +77,7 @@
   transition: background-color 0.3s ease-in;
 }
 .onoffswitch-label:before {
-  content: ""; height: 24px; 
+  content: ""; height: 24px;
   display: block; width: 24px; margin: 0px;
   background: #FFFFFF;
   position: absolute; top: 0; bottom: 0;

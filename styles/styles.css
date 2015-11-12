@@ -28,11 +28,18 @@ body {
   text-align: center;
 }
 
-.actionbar img {
+.actionbar .opendrawer {
   vertical-align: middle;
   position: fixed;
   top: 6px;
   left: 6px;
+}
+
+.actionbar .menu {
+  vertical-align: middle;
+  position: fixed;
+  top: 6px;
+  right: 6px;
 }
 
 .actionbar span {
@@ -43,4 +50,11 @@ body {
 
 .content {
   padding-top: 48px;
+}
+
+.grouptitle {
+  padding: 8px 16px;
+  font-weight: bold;
+  background-color: #EEEEEE;
+  border-bottom: 1px solid #E0E0E0;
 }
