@@ -11,6 +11,8 @@ body {
   font-family: RobotoRegular;
   margin: 0px;
   height: 100%;
+  color: #616161;
+  font-size: 14px;
 }
 
 .actionbar {
@@ -23,18 +25,6 @@ body {
   right: 0px;
   z-index: 1000;
   vertical-align: middle;
-}
-
-.grouptitle {
-  padding: 8px;
-  font-weight: bold;
-  background-color: #EEEEEE;
-  border-bottom: 1px solid #E0E0E0;
-}
-
-.groupitem {
-  padding: 6px;
-  border-bottom: 1px solid #E0E0E0;
 }
 
 .content {
