@@ -59,6 +59,15 @@ body {
   color: #616161;
 }
 
+/* Define style for exit button in drawer */
+.cautionbutton {
+  margin-top: 6px;
+  padding: 10px;
+  color: white;
+  background-color: red;
+  text-align: center;
+}
+
 .grouptitle {
   padding: 8px 10px;
   font-weight: bold;

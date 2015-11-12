@@ -1,12 +1,36 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="styles/styles.css"/>
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css"/>
+      <link rel="stylesheet" type="text/css" href="../styles/taskdetails.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>Task details</title>
   </head>
   <body>
-    hello
+    <table class="toolbar">
+      <tr>
+        <td class="drawerAndUp">
+          <img src="../images/ic_chevron_left.png" alt="Navigate up"/>
+          <span>Tasks</span>
+        </td>
+        <td class="title">
+          <span>Tasks</span>
+        </td>
+        <td class="menu"></td>
+      </tr>
+    </table>
+    <div class="content">
+      <div class="taskinfo">
+        <h2>Task title</h2>
+        <h3>sub task title</h3>
+        <p class="taskassignee">Task assignee</p>
+        <p class="taskperiod">from Nov - to Dec</p>
+        <p class="taskimportance">!!!high importance</p>
+      </div>
+      <div class="cautionbutton">
+        Delete
+      </div>
+    </div>
   </body>
 </html>
