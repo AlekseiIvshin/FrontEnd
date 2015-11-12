@@ -1,0 +1,21 @@
+.search {
+  padding: 6px;
+  color: #BDBDBD;
+  border-bottom: 1px solid #E0E0E0;
+  min-height: 24px;
+}
+
+.search img {
+  display: inline-block;
+  vertical-align: middle;
+}
+.search span {
+  font-size: 12px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.switcheritem {
+  padding: 6px;
+  border-bottom: 1px solid #E0E0E0;
+}

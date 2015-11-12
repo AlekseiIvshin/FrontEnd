@@ -1,0 +1,23 @@
+.drawer {
+  display: inline-block;
+  max-width: 320px;
+  min-width: 280px;
+  height: 100%;
+  font-size: 16px;
+  box-sizing: border-box;
+  border-right: 1px solid #d3d3d3;
+}
+
+.draweritem {
+  padding: 10px;
+  border-bottom: 1px solid #d3d3d3;
+  color: #616161;
+}
+
+.exitdraweritem {
+  margin-top: 6px;
+  padding: 10px;
+  color: white;
+  background-color: red;
+  text-align: center;
+}

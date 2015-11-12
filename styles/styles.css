@@ -12,3 +12,31 @@ body {
   margin: 0px;
   height: 100%;
 }
+
+.actionbar {
+  position: fixed;
+  background-color: #29B6F6;
+  color: #FFFFFF;
+  min-height: 48px;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 1000;
+  vertical-align: middle;
+}
+
+.grouptitle {
+  padding: 8px;
+  font-weight: bold;
+  background-color: #EEEEEE;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.groupitem {
+  padding: 6px;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.content {
+  padding-top: 48px;
+}
