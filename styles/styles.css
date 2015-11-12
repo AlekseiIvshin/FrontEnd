@@ -43,6 +43,16 @@ body {
 
 .toolbar .drawerAndUp{
   width: 30%;
+  color: #FFF;
+}
+
+.toolbar span, img{
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+
+  line-height: 48px;
+  vertical-align: middle;
 }
 
 .toolbar .title{
