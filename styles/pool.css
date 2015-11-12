@@ -1,7 +1,7 @@
 .search {
-  padding: 6px 16px;
+  padding: 0px 16px;
   border-bottom: 1px solid #E0E0E0;
-  min-height: 24px;
+  line-height: 36px;
 }
 
 .search img {
@@ -12,12 +12,12 @@
 .search span {
   font-size: 12px;
   color: #BDBDBD;
-  display: inline-block;
   vertical-align: middle;
 }
 
 .switcheritem {
   padding: 6px 16px;
+  line-height: 36px;
   border-bottom: 1px solid #E0E0E0;
 }
 
@@ -61,4 +61,40 @@
   font-size: 12px;
   margin: 4px auto 0px;
   color: #9E9E9E;
+}
+
+/* Gets from web site proto.io*/
+.onoffswitch {
+  vertical-align: middle;
+  display: inline-block;
+  position: relative; width: 40px;
+  -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+  display: none;
+}
+.onoffswitch-label {
+  display: block; overflow: hidden; cursor: pointer;
+  height: 24px; padding: 0; line-height: 24px;
+  border: 2px solid #CCCCCC; border-radius: 24px;
+  background-color: #FFFFFF;
+  transition: background-color 0.3s ease-in;
+}
+.onoffswitch-label:before {
+  content: "";
+  display: block; width: 24px; margin: 0px;
+  background: #FFFFFF;
+  position: absolute; top: 0; bottom: 0;
+  right: 14px;
+  border: 2px solid #CCCCCC; border-radius: 24px;
+  transition: all 0.3s ease-in 0s;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label {
+  background-color: #29B6F6;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label, .onoffswitch-checkbox:checked + .onoffswitch-label:before {
+ border-color: #29B6F6;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label:before {
+  right: 0px;
 }
