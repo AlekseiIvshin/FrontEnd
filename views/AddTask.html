@@ -1,12 +1,40 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="styles/styles.css"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
-    <title>Add task</title>
-  </head>
-  <body>
-    hello
-  </body>
+<head>
+  <link rel="stylesheet" type="text/css" href="../styles/styles.css"/>
+  <link rel="stylesheet" type="text/css" href="../styles/addtask.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>Add task</title>
+</head>
+<body>
+  <table class="toolbar">
+    <tr>
+      <td class="drawerAndUp">
+        <img src="../images/ic_chevron_left.png" alt="Navigate up"/>
+        <span>Tasks</span>
+      </td>
+      <td class="title">
+        <span>Add task</span>
+      </td>
+      <td class="menu">
+        <bottom id="addNewTask">Done</button>
+      </td>
+    </tr>
+  </table>
+  <div class="content">
+    <div class="listitem">Task name</div>
+    <div class="listitem">Description</div>
+    <div class="listitem">Start date</div>
+    <div class="listitem">End date</div>
+    <div class="listitem dropdownitem">Assignee<div class="dropdawnarroy"></div></div>
+    <div class="listitem checkeditem">
+      <div class="customcheckboxcontainer">
+        <input type="checkbox" id="customizedcheckbox" name="customizedcheckbox"/>
+        <label for="customizedcheckbox"></label>
+      </div>
+      High importance
+    </div>
+  </div>
+</body>
 </html>
