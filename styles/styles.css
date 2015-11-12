@@ -66,7 +66,15 @@ body {
   border-bottom: 1px solid #E0E0E0;
 }
 
+.topbordered {
+  border-top: 1px solid #E0E0E0;
+}
+
 img.photo {
   display: block;
   margin: 0 auto;
+}
+
+hr.divider {
+  color: #d3d3d3;
 }

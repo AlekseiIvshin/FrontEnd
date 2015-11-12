@@ -8,19 +8,3 @@
 .title {
   margin: 6px 8px;
 }
-
-.groupitem {
-  padding: 6px 16px;
-  border-bottom: 1px solid #E0E0E0;
-  line-height: 30px;
-  font-size: 12px;
-  color: #9E9E9E;
-}
-
-.grouptitle:first-child {
-  border-top: 3px solid #E0E0E0;
-}
-
-.poolmemberinfo {
-  border-top: 1px solid #E0E0E0;
-}
