@@ -25,10 +25,14 @@ body {
   z-index: 1000;
   box-sizing: border-box;
   padding-left: 4px;
+  text-align: center;
 }
 
 .actionbar img {
   vertical-align: middle;
+  position: fixed;
+  top: 6px;
+  left: 6px;
 }
 
 .actionbar span {
