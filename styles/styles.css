@@ -15,6 +15,12 @@ body {
   font-size: 14px;
 }
 
+.listitem {
+  padding: 10px;
+  border-bottom: 1px solid #d3d3d3;
+  color: #616161;
+}
+
 .actionbar {
   position: fixed;
   background-color: #29B6F6;
@@ -35,14 +41,28 @@ body {
   left: 6px;
 }
 
+.actionbar .uptitle {
+  position: fixed;
+  left: 36px;
+  color: #FFF;
+  vertical-align: middle;
+  font-weight: normal;
+}
+
 .actionbar .menu {
   vertical-align: middle;
   position: fixed;
   top: 6px;
   right: 6px;
 }
-
+/*Deprecated use .title  TODO remove this style*/
 .actionbar span {
+  color: #FFFFFF;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+.actionbar .title {
   color: #FFFFFF;
   font-weight: bold;
   vertical-align: middle;
@@ -57,4 +77,9 @@ body {
   font-weight: bold;
   background-color: #EEEEEE;
   border-bottom: 1px solid #E0E0E0;
+}
+
+img.photo {
+  display: block;
+  margin: 0 auto;
 }

@@ -1,3 +1,4 @@
+/* Drawer style. */
 .drawer {
   display: inline-block;
   max-width: 320px;
@@ -8,12 +9,7 @@
   border-right: 1px solid #d3d3d3;
 }
 
-.draweritem {
-  padding: 10px;
-  border-bottom: 1px solid #d3d3d3;
-  color: #616161;
-}
-
+/* Define style for exit button in drawer */
 .exitdraweritem {
   margin-top: 6px;
   padding: 10px;

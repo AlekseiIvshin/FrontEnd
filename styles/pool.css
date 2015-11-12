@@ -1,27 +1,19 @@
+/* Search bar main style */
 .search {
   padding: 0px 16px;
   border-bottom: 1px solid #E0E0E0;
   line-height: 36px;
 }
-
+/* Search icon */
 .search img {
-  display: inline-block;
   vertical-align: middle;
   margin-right: 4px;
 }
 
+/* Search hint */
 .search span {
   font-size: 12px;
   color: #BDBDBD;
-  vertical-align: middle;
-}
-
-.switcheritem {
-  padding: 6px 16px;
-  line-height: 36px;
-  border-bottom: 1px solid #E0E0E0;
-  display: flex;
-  justify-content: space-between;
 }
 
 .groupitem {
@@ -59,10 +51,18 @@
   color: #9E9E9E;
 }
 
+
+.switcheritem {
+  padding: 6px 16px;
+  line-height: 36px;
+  border-bottom: 1px solid #E0E0E0;
+  display: flex;
+  justify-content: space-between;
+}
+
 /* Gets from web site proto.io*/
 .onoffswitch {
-  vertical-align: middle;
-  display: inline-block;
+  margin: auto 0;
   position: relative; width: 40px;
   -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
 }
