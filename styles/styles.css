@@ -94,7 +94,7 @@ hr.divider {
 }
 
 .checkeditem {
-  padding: 6px 16px;
+  padding: 6px 8px;
   line-height: 36px;
   display: flex;
   justify-content: flex-start;
@@ -128,4 +128,18 @@ input[type="checkbox"] + label {
 input[type="checkbox"]:checked + label {
   background-color: #29B6F6;
   border-color: #29B6F6;
+}
+
+
+h2 {
+  color: #212121;
+  margin: 8px;
+}
+
+h3 {
+  margin: 8px;
+}
+
+p {
+  margin: 8px;
 }
