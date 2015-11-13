@@ -10,10 +10,9 @@
   margin-right: 4px;
 }
 
-/* Search hint */
-.search span {
+.search input {
   font-size: 12px;
-  color: #BDBDBD;
+  border: none;
 }
 
 .groupitem {
