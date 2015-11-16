@@ -39,6 +39,8 @@ body {
 .toolbar .drawerAndUp{
   display: inline-block;
   width: 30%;
+  padding-top: 2px;
+  padding-left: 4px;
   box-sizing: border-box;
 }
 
