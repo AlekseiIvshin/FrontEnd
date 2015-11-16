@@ -8,6 +8,8 @@
 .search img {
   vertical-align: middle;
   margin-right: 4px;
+  height: 18px;
+  width: 18px;
 }
 
 .search input {
