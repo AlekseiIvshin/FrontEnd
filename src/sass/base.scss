@@ -1,0 +1,85 @@
+$medium-text-size: 14px; /* Main text size for web site */
+$small-text-size: $medium-text-size - 2; /* Small text size for web site */
+$large-text-size: $medium-text-size + 2; /* Large text size for web site */
+$primary-color: #29B6F6; /* Primary colro for web site, using for toolbar(header) and other controls */
+$default-spacing: 10px;
+$toolbar-height: 40px;
+
+@font-face {
+    font-family: RobotoRegular;
+    src: url(Roboto-Regular-webfont.woff);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: RobotoRegular;
+  margin: 0px;
+  height: 100%;
+  color: #616161;
+  font-size: $medium-text-size;
+}
+
+.content {
+  padding-top: $toolbar-height;
+}
+
+.list-item {
+  padding: $default-spacing;
+  border-bottom: 1px solid #d3d3d3;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.toolbar span, img{
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+
+  vertical-align: middle;
+}
+
+.toolbar {
+  position: fixed;
+  background-color: $primary-color;
+  height: $toolbar-height;
+  width: 100%;
+  color: #FFF;
+}
+
+.toolbar img{
+  width: 36px;
+  height: 36px;
+}
+
+.toolbar .drawerAndUp{
+  display: inline-block;
+  width: 30%;
+  padding-top: 2px;
+  padding-left: 4px;
+  box-sizing: border-box;
+}
+
+.toolbar .title{
+  display: inline-block;
+  font-weight: bold;
+  text-align: center;
+  width: 40%;
+  box-sizing: border-box;
+}
+
+.toolbar .menu{
+  display: inline-block;
+  width: 30%;
+  text-align: right;
+  box-sizing: border-box;
+  padding-right: 8px;
+}
+
+.group-title {
+  font-weight: bold;
+  background-color: #EEEEEE;
+  border-bottom: 1px solid #E0E0E0;
+}

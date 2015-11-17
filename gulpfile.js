@@ -30,15 +30,8 @@ gulp.task('webserver', ['copySrc2Dist'], function() {
 });
 
 gulp.task('sass', function () {
-  var sassStream;
-  var cssStream;
-
-  sassStream = gulp.src('./src/sass/**')
-    .pipe(sass().on('error', sass.logError));
-  cssStream = gulp.src(['./src/styles/**','!./src/styles/*.woff']);
-
-  return merge(sassStream, cssStream)
-    .pipe(concat('app.css'))
+  gulp.src(['./src/sass/**/*.scss','!./src/sass/**/*base.scss'])
+    .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('./dist/styles'));
 });
 

@@ -1,0 +1,57 @@
+@import 'base';
+$thumbnail-height: 72px;
+
+.thumbnail  {
+  min-height: $thumbnail-height;
+}
+
+.thumbnail__avatar {
+    height: $thumbnail-height;
+    width: $thumbnail-height;
+    box-sizing: border-box;
+    border: 1px solid #E0E0E0;
+}
+
+.search input[type="search"] {
+  display: inline-block;
+  width: 100%;
+}
+
+.thumbnail__short-info {
+  display: inline-block;
+}
+
+.short-info {
+  padding-left: $default-spacing;
+  vertical-align: top;
+}
+
+.short-info__name {
+  margin: 0px;
+}
+
+.short-info__title {
+  color: #424242;
+  margin: 0px;
+  font-weight: bold;
+}
+
+.short-info__tasks {
+  font-size: 12px;
+  margin: 4px auto 0px;
+  color: #9E9E9E;
+}
+
+
+.switcher {
+  justify-content: space-between;
+  display: flex;
+}
+
+.switcher__name {
+  display: flex;
+}
+
+.switcher__control {
+  display: flex;
+}
