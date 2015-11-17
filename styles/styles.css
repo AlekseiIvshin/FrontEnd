@@ -68,6 +68,15 @@ body {
   padding: 10px;
   border-bottom: 1px solid #d3d3d3;
   color: #616161;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+.group-title {
+  font-weight: bold;
+  background-color: #EEEEEE;
+  border-bottom: 1px solid #E0E0E0;
 }
 
 /* Define style for exit button in drawer */
@@ -77,13 +86,6 @@ body {
   color: white;
   background-color: red;
   text-align: center;
-}
-
-.group-title {
-  padding: 8px 10px;
-  font-weight: bold;
-  background-color: #EEEEEE;
-  border-bottom: 1px solid #E0E0E0;
 }
 
 .top-bordered {
