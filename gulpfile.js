@@ -11,7 +11,9 @@ gulp.task('minify', function() {
     .pipe(gulp.dest('build'));
 });
 
-gulp.task('copySrc2Dist', function() {
+gulp.task('deploy-release',['minify','deploy']);
+
+gulp.task('deploy',['sass'], function() {
   return gulp.src(['./src/**/*','!./src/sass','!./src/sass/**'])
     .pipe(gulp.dest('dist'))
 });
@@ -38,10 +40,6 @@ gulp.task('sass', function () {
   return merge(sassStream, cssStream)
     .pipe(concat('app.css'))
     .pipe(gulp.dest('./dist/styles'));
-
-  // gulp.src('./src/sass/**/*.scss')
-  //   .pipe(sass().on('error', sass.logError))
-  //   .pipe(gulp.dest('./dist/styles'));
 });
 
 gulp.task('sass:watch', function () {

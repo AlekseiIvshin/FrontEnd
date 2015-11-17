@@ -1,6 +1,7 @@
 $main-text-size: 14px; /* Main text size for web site */
 $primary-color: #29B6F6; /* Primary colro for web site, using for toolbar(header) and other controls */
 $default-spacing: 10px;
+$toolbar-height: 40px;
 
 @font-face {
     font-family: RobotoRegular;
@@ -22,7 +23,11 @@ body {
 .toolbar {
   position: fixed;
   background-color: $primary-color;
-  height: 40px;
+  height: $toolbar-height;
   width: 100%;
   color: #FFF;
+}
+
+.content {
+  padding-top: $toolbar-height;
 }
