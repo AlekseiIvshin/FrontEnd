@@ -1,0 +1,19 @@
+{
+  "name": "webstore",
+  "version": "0.0.1",
+  "description": "Front-end practical task",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AlekseiIvshin/frontend.git"
+  },
+  "author": "Aleksei_Ivshin@epam.com",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-webserver": "^0.9.1"
+  }
+}
