@@ -4,8 +4,12 @@ $large-text-size: $medium-text-size + 6; /* Large text size for web site */
 
 $dark-text-color: #424242;
 $light-text-color: #9E9E9E;
+$light-text-color: #9E9E9E;
+$cation-text-collor: white;
 
+$cation-collor: red;
 $primary-color: #29B6F6; /* Primary colro for web site, using for toolbar(header) and other controls */
+
 $default-spacing: 10px;
 $toolbar-height: 40px;
 
@@ -86,4 +90,24 @@ body {
   font-weight: bold;
   background-color: #EEEEEE;
   border-bottom: 1px solid #E0E0E0;
+}
+
+.e-name {
+  margin: $default-spacing; /*use margin for margin collapsing*/
+  color: $dark-text-color;
+  font-weight: bold;
+  font-size: $large-text-size;
+}
+
+.e-additional {
+  margin: $default-spacing; /*use margin for margin collapsing*/
+  font-weight: bold;
+  font-size: $medium-text-size;
+}
+
+.e-caution {
+  margin-top: 24px;
+  color: $cation-text-collor;
+  background-color: $cation-collor;
+  text-align: center;
 }

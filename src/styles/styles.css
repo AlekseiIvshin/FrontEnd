@@ -1,19 +1,5 @@
 
 
-/* Define style for exit button in drawer */
-.caution-button {
-  margin-top: 6px;
-  padding: 10px;
-  color: white;
-  background-color: red;
-  text-align: center;
-}
-
-.top-bordered {
-  border-top: 1px solid #E0E0E0;
-}
-
-
 .drop-down-item {
   display: flex;
   justify-content: space-between;
