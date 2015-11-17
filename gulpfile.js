@@ -2,6 +2,9 @@
 var gulp = require('gulp');
 var webserver = require('gulp-webserver');
 var sass = require('gulp-sass');
+var merge = require('merge-stream');
+var concat = require('gulp-concat');
+var rename = require('gulp-rename');
 
 gulp.task('minify', function() {
   return gulp.src('client/js/**/*.js')
@@ -25,9 +28,20 @@ gulp.task('webserver', ['copySrc2Dist'], function() {
 });
 
 gulp.task('sass', function () {
-  gulp.src('./src/sass/**/*.scss')
-    .pipe(sass().on('error', sass.logError))
+  var sassStream;
+  var cssStream;
+
+  sassStream = gulp.src('./src/sass/**')
+    .pipe(sass().on('error', sass.logError));
+  cssStream = gulp.src(['./src/styles/**','!./src/styles/*.woff']);
+
+  return merge(sassStream, cssStream)
+    .pipe(concat('app.css'))
     .pipe(gulp.dest('./dist/styles'));
+
+  // gulp.src('./src/sass/**/*.scss')
+  //   .pipe(sass().on('error', sass.logError))
+  //   .pipe(gulp.dest('./dist/styles'));
 });
 
 gulp.task('sass:watch', function () {

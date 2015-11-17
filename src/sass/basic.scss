@@ -1,0 +1,28 @@
+$main-text-size: 14px; /* Main text size for web site */
+$primary-color: #29B6F6; /* Primary colro for web site, using for toolbar(header) and other controls */
+$default-spacing: 10px;
+
+@font-face {
+    font-family: RobotoRegular;
+    src: url(Roboto-Regular-webfont.woff);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: RobotoRegular;
+  margin: 0px;
+  height: 100%;
+  color: #616161;
+  font-size: $main-text-size;
+}
+
+.toolbar {
+  position: fixed;
+  background-color: $primary-color;
+  height: 40px;
+  width: 100%;
+  color: #FFF;
+}
