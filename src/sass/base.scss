@@ -5,9 +5,13 @@ $large-text-size: $medium-text-size + 6; /* Large text size for web site */
 $dark-text-color: #424242;
 $light-text-color: #9E9E9E;
 $light-text-color: #9E9E9E;
-$cation-text-collor: white;
+$cation-text-color: white;
 
-$cation-collor: red;
+$divider-color: #d3d3d3;
+
+$drawer-width: 280px;
+
+$cation-color: red;
 $primary-color: #29B6F6; /* Primary colro for web site, using for toolbar(header) and other controls */
 
 $default-spacing: 10px;
@@ -36,7 +40,7 @@ body {
 
 .e-list-item {
   padding: $default-spacing;
-  border-bottom: 1px solid #d3d3d3;
+  border-bottom: 1px solid $divider-color;
   width: 100%;
   box-sizing: border-box;
 }
@@ -106,8 +110,17 @@ body {
 }
 
 .e-caution {
-  margin-top: 24px;
-  color: $cation-text-collor;
-  background-color: $cation-collor;
+  margin-top: $default-spacing;
+  color: $cation-text-color;
+  background-color: $cation-color;
+  border: 1px solid $cation-color;
   text-align: center;
+}
+
+.e-drawer {
+  display: inline-block;
+  width: $drawer-width;
+  height: 100%;
+  box-sizing: border-box;
+  border-right: 1px solid $divider-color;
 }
