@@ -31,17 +31,16 @@ $thumbnail-height: 72px;
 }
 
 .short-info__title {
-  color: #424242;
+  color: $dark-text-color;
   margin: 0px;
   font-weight: bold;
 }
 
 .short-info__tasks {
-  font-size: 12px;
+  font-size: $small-text-size;
   margin: 4px auto 0px;
-  color: #9E9E9E;
+  color: $light-text-color;
 }
-
 
 .switcher {
   justify-content: space-between;
