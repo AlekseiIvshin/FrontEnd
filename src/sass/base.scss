@@ -1,9 +1,9 @@
 $medium-text-size: 14px; /* Main text size for web site */
 $small-text-size: $medium-text-size - 2; /* Small text size for web site */
-$large-text-size: $medium-text-size + 2; /* Large text size for web site */
+$large-text-size: $medium-text-size + 6; /* Large text size for web site */
 
 $dark-text-color: #424242;
-$light-text-color: #9E9E9E; 
+$light-text-color: #9E9E9E;
 
 $primary-color: #29B6F6; /* Primary colro for web site, using for toolbar(header) and other controls */
 $default-spacing: 10px;
@@ -26,18 +26,18 @@ body {
   font-size: $medium-text-size;
 }
 
-.content {
+.e-content {
   padding-top: $toolbar-height;
 }
 
-.list-item {
+.e-list-item {
   padding: $default-spacing;
   border-bottom: 1px solid #d3d3d3;
   width: 100%;
   box-sizing: border-box;
 }
 
-.toolbar span, img{
+.e-toolbar span, img{
   display: inline-block;
   margin: 0;
   padding: 0;
@@ -45,7 +45,7 @@ body {
   vertical-align: middle;
 }
 
-.toolbar {
+.e-toolbar {
   position: fixed;
   background-color: $primary-color;
   height: $toolbar-height;
@@ -53,12 +53,12 @@ body {
   color: #FFF;
 }
 
-.toolbar img{
+.e-toolbar img{
   width: 36px;
   height: 36px;
 }
 
-.toolbar .drawerAndUp{
+.e-toolbar .e-drawerAndUp{
   display: inline-block;
   width: 30%;
   padding-top: 2px;
@@ -66,7 +66,7 @@ body {
   box-sizing: border-box;
 }
 
-.toolbar .title{
+.e-toolbar .e-title{
   display: inline-block;
   font-weight: bold;
   text-align: center;
@@ -74,7 +74,7 @@ body {
   box-sizing: border-box;
 }
 
-.toolbar .menu{
+.e-toolbar .e-menu{
   display: inline-block;
   width: 30%;
   text-align: right;
@@ -82,7 +82,7 @@ body {
   padding-right: 8px;
 }
 
-.group-title {
+.e-group-title {
   font-weight: bold;
   background-color: #EEEEEE;
   border-bottom: 1px solid #E0E0E0;

@@ -13,14 +13,6 @@
   border-top: 1px solid #E0E0E0;
 }
 
-img.photo {
-  display: block;
-  margin: 0 auto;
-}
-
-hr.divider {
-  color: #d3d3d3;
-}
 
 .drop-down-item {
   display: flex;
@@ -46,17 +38,6 @@ hr.divider {
 
 .custom-checkbox-container {
     margin: auto 8px auto 0;
-}
-
-.text-title {
-  color: #212121;
-  font-weight: bold;
-  font-size: 24px;
-}
-
-.text-subtitle {
-  font-weight: bold;
-  font-size: 16px;
 }
 
 p {

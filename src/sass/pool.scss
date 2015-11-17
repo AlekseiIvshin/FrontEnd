@@ -1,56 +1,57 @@
 @import 'base';
+
 $thumbnail-height: 72px;
 
-.thumbnail  {
+.e-thumbnail  {
   min-height: $thumbnail-height;
 }
 
-.thumbnail__avatar {
+.e-thumbnail__avatar {
     height: $thumbnail-height;
     width: $thumbnail-height;
     box-sizing: border-box;
     border: 1px solid #E0E0E0;
 }
 
-.search input[type="search"] {
+.e-search input[type="search"] {
   display: inline-block;
   width: 100%;
 }
 
-.thumbnail__short-info {
+.e-thumbnail__short-info {
   display: inline-block;
 }
 
-.short-info {
+.e-short-info {
   padding-left: $default-spacing;
   vertical-align: top;
 }
 
-.short-info__name {
+.e-short-info__name {
   margin: 0px;
 }
 
-.short-info__title {
+.e-short-info__title {
   color: $dark-text-color;
   margin: 0px;
   font-weight: bold;
 }
 
-.short-info__tasks {
+.e-short-info__tasks {
   font-size: $small-text-size;
   margin: 4px auto 0px;
   color: $light-text-color;
 }
 
-.switcher {
+.e-switcher {
   justify-content: space-between;
   display: flex;
 }
 
-.switcher__name {
+.e-switcher__name {
   display: flex;
 }
 
-.switcher__control {
+.e-switcher__control {
   display: flex;
 }

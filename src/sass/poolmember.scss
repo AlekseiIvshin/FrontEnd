@@ -1,0 +1,28 @@
+@import 'base';
+
+.e-avatar {
+  display: block;
+  margin: 0 auto;
+}
+
+.e-divider {
+  color: #d3d3d3;
+}
+
+.e-member__name {
+  margin: $default-spacing; /*use margin for margin collapsing*/
+  color: $dark-text-color;
+  font-weight: bold;
+  font-size: $large-text-size;
+}
+
+.e-member__title {
+  margin: $default-spacing; /*use margin for margin collapsing*/
+  font-weight: bold;
+  font-size: $medium-text-size;
+}
+
+
+.e-group-item:first-child {
+  border-top: 100px solid #E0E0E0;
+}
