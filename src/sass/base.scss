@@ -89,11 +89,7 @@ body {
   font-size: $medium-text-size;
 }
 
-.e-toolbar span, img{
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-
+.e-toolbar span {
   vertical-align: middle;
 }
 
@@ -104,11 +100,6 @@ body {
   line-height: $toolbar-height;
   color: #FFF;
   vertical-align: middle;
-}
-
-.e-toolbar img{
-  width: 36px;
-  height: 36px;
 }
 
 .e-toolbar__nav{
