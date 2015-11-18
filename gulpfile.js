@@ -7,21 +7,17 @@ var concat = require('gulp-concat');
 var rename = require('gulp-rename');
 var minifyHTML = require('gulp-minify-html');
 
-gulp.task('minify', function() {
-  return gulp.src('client/js/**/*.js')
-    .pipe(gulp.dest('build'));
-});
+var sourcePath = './src';
+var buildPath = './dist';
 
-gulp.task('deploy-release',['minify','deploy','minify-html']);
 
-gulp.task('deploy',['sass'], function() {
-  return gulp.src(['./src/**/*','!./src/views/**','!./src/sass','!./src/sass/**'])
-    .pipe(gulp.dest('dist'))
-});
+gulp.task('default', ['deploy']);
 
-gulp.task('default', ['minify']);
+gulp.task('deploy-release',['minify-js','minify-html','sass','moveResources']);
 
-gulp.task('webserver', ['deploy'], function() {
+gulp.task('deploy',['sass','moveViews','moveResources']);
+
+gulp.task('webserver', ['deploy-release'], function() {
   gulp.src('dist')
     .pipe(webserver({
       liveload: true,
@@ -30,14 +26,33 @@ gulp.task('webserver', ['deploy'], function() {
 	}));
 });
 
+gulp.task('moveResources',['moveFonts','moveImages']);
+
+gulp.task('moveViews', function() {
+    gulp.src(sourcePath+'/views/**').pipe(gulp.dest(buildPath+'/views'))
+});
+
+gulp.task('moveFonts', function() {
+  gulp.src(sourcePath+'/fonts/**').pipe(gulp.dest(buildPath+'/styles'))
+});
+
+gulp.task('moveImages', function() {
+  gulp.src(sourcePath+'/images/**').pipe(gulp.dest(buildPath+'/images'))
+});
+
 gulp.task('sass', function () {
-  gulp.src(['./src/sass/**/*.scss','!./src/sass/**/*base.scss'])
+  gulp.src([sourcePath+'/sass/**/*.scss','!./src/sass/**/*base.scss'])
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./dist/styles'));
+    .pipe(gulp.dest(buildPath+'/styles'));
 });
 
 gulp.task('sass:watch', function () {
-  gulp.watch('./src/sass/**/*.scss', ['sass']);
+  gulp.watch(sourcePath+'/sass/**/*.scss', ['sass']);
+});
+
+gulp.task('minify-js', function() {
+  return gulp.src('client/js/**/*.js')
+    .pipe(gulp.dest('build'));
 });
 
 gulp.task('minify-html', function() {
@@ -46,7 +61,7 @@ gulp.task('minify-html', function() {
     spare:true
   };
 
-  return gulp.src('./src/views/*.html')
+  return gulp.src(sourcePath+'/views/*.html')
     .pipe(minifyHTML(opts))
-    .pipe(gulp.dest('./dist/views/'));
+    .pipe(gulp.dest(buildPath+'/views/'));
 });
