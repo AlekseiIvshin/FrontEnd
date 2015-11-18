@@ -2,35 +2,64 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="../styles/addtask.css"/>
-    <link rel="stylesheet" type="text/css" href="../styles/styles.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>Add task</title>
   </head>
   <body>
-    <div class="toolbar">
-      <div class="drawerAndUp">
-        <img src="../images/ic_chevron_left.png" alt="Navigate up"/>
-        <span>Tasks</span>
-      </div><div class="title">
-        <span>Add task</span>
-      </div><div class="menu">
-        <bottom id="addNewTask">Done</button>
-      </div>
-    </div>
-    <div class="content">
-      <div class="list-item">Task name</div>
-      <div class="list-item">Description</div>
-      <div class="list-item">Start date</div>
-      <div class="list-item">End date</div>
-      <div class="list-item drop-down-item">Assignee<div class="drop-dawn-arroy"></div></div>
-      <div class="list-item checked-item">
-        <div class="custom-checkbox-container">
-          <input type="checkbox" id="customized-checkbox" name="customized-checkbox"/>
-          <label for="customized-checkbox"></label>
+    <div class="e-content">
+      <header class="e-content__header e-toolbar">
+          <div class="e-toolbar__nav">
+            <img src="../images/ic_chevron_left.png" alt="Navigate up"/>
+            <span>Tasks</span>
+          </div>
+          <div class="e-toolbar__title">
+            <span>Add task</span>
+          </div>
+          <div class="e-toolbar__menu">
+            <bottom id="addNewTask">Done</button>
+          </div>
+      </header>
+      <main class="e-content__body">
+        <div class="e-list-item e-param">
+          <span class="e-param__name">Task name</span>
+          <input class="e-param__value" type="text" id="task-name"/>
         </div>
-        High importance
-      </div>
+
+        <div class="e-list-item e-param">
+          <span class="e-param__name">Description</span>
+          <input class="e-param__value" type="text" id="task-desc"/>
+        </div>
+
+        <div class="e-list-item e-param">
+          <span class="e-param__name">Start date</span>
+          <input class="e-param__value" type="text" id="start-date"/>
+        </div>
+
+        <div class="e-list-item e-param">
+          <span class="e-param__name">End date</span>
+          <input class="e-param__value" type="text" id="end-date"/>
+        </div>
+
+        <div class="e-list-item e-param">
+          <span class="e-param__name">Assignee</span>
+          <select class="e-param__value">
+            <option></option>
+            <option>Assignee 1</option>
+            <option>Assignee 2</option>
+            <option>Assignee 3</option>
+            <option>Assignee 4</option>
+          </select>
+        </div>
+
+        <div class="e-list-item  e-param">
+          <div class="custom-checkbox-container">
+            <input type="checkbox" id="customized-checkbox" name="customized-checkbox"/>
+            <label for="customized-checkbox"></label>
+          </div>
+          <span>High importance</span>
+        </div>
+      </main>
     </div>
   </body>
 </html>
