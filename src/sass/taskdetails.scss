@@ -1,7 +1,7 @@
-@import 'base';
+@import 'toolbar.base';
 
 .e-info-item {
-  margin: $default-spacing;
+  margin: $default-spacing; /* Use margin because of margin collapsing simplify live */
 }
 
 .e-caution {
