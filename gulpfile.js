@@ -20,7 +20,7 @@ gulp.task('deploy',['sass'], function() {
 
 gulp.task('default', ['minify']);
 
-gulp.task('webserver', ['copySrc2Dist'], function() {
+gulp.task('webserver', ['deploy'], function() {
   gulp.src('dist')
     .pipe(webserver({
       liveload: true,

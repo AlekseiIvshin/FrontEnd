@@ -1,0 +1,45 @@
+@import 'default.base';
+
+.e-toolbar span, img{
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+
+  vertical-align: middle;
+}
+
+.e-toolbar {
+  width: 100%;
+  background-color: $primary-color;
+  height: $toolbar-height;
+  color: #FFF;
+}
+
+.e-toolbar img{
+  width: 36px;
+  height: 36px;
+}
+
+.e-toolbar__nav{
+  display: inline-block;
+  width: 30%;
+  padding-top: 2px;
+  padding-left: 4px;
+  box-sizing: border-box;
+}
+
+.e-toolbar__title{
+  display: inline-block;
+  font-weight: bold;
+  text-align: center;
+  width: 40%;
+  box-sizing: border-box;
+}
+
+.e-toolbar__menu{
+  display: inline-block;
+  width: 30%;
+  text-align: right;
+  box-sizing: border-box;
+  padding-right: 8px;
+}
