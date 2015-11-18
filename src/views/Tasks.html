@@ -7,20 +7,35 @@
     <title>Tasks</title>
   </head>
   <body>
-    <div class="e-toolbar">
-      <div class="e-drawerAndUp">
-        <img src="../images/ic_menu_white.png" alt="Open drawer"/>
-      </div><div class="e-title">
-        <span>Tasks</span>
-      </div><div class="e-menu">
-        <img src="../images/ic_plus.png" alt="Add new task"/>
-      </div>
-    </div>
+    <nav class="e-navigation">
+        <div class="e-list-item">
+          <span>Pool</span>
+        </div>
+        <div class="e-list-item">
+          <span>Tasks</span>
+        </div>
+        <div class="e-list-item e-caution">
+          <span>Exit</span>
+        </div>
+    </nav>
     <div class="e-content">
-      <div class="e-group-title e-list-item"><span>Unassigned</span></div>
-      <div class="e-list-item"><span>Thing 1</span></div>
-      <div class="e-group-title e-list-item"><span>On going</span></div>
-      <div class="e-list-item"><span>Thing 1</span></div>
+      <header class="e-content__header e-toolbar">
+          <div class="e-toolbar__nav">
+            <img src="../images/ic_menu_white.png" alt="Open drawer"/>
+          </div>
+          <div class="e-toolbar__title">
+            <span>Tasks</span>
+          </div>
+          <div class="e-toolbar__menu">
+            <img src="../images/ic_plus.png" alt="Add new task"/>
+          </div>
+      </header>
+      <main class="e-content__body">
+        <div class="e-group-title e-list-item"><span>Unassigned</span></div>
+        <div class="e-list-item"><span>Thing 1</span></div>
+        <div class="e-group-title e-list-item"><span>On going</span></div>
+        <div class="e-list-item"><span>Thing 1</span></div>
+      </main>
     </div>
   </body>
 </html>
