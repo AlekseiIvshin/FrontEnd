@@ -21,7 +21,7 @@
     <div class="e-content">
         <header class="e-content__header e-toolbar">
           <div class="e-toolbar__nav">
-            <img src="../images/ic_menu_white.png" alt="Open drawer"/>
+            <span class="e-font-icon"></span>
           </div>
           <div class="e-toolbar__title">
             <span>Pool</span>
@@ -29,11 +29,18 @@
           <div class="e-toolbar__menu"></div>
       </header>
       <main class="e-content__body">
-        <div class="e-list-item e-switcher">
-          <span class="e-switcher__name">Inactive only</span>
-          <span class="e-switcher__control">SWITCHER CONTROL</span>
+        <label for="customized-swither">
+          <div class="e-list-item e-switcher">
+            <span class="e-switcher__name">Inactive only</span>
+              <div class="e-switcher__control">
+                <input type="checkbox" id="customized-swither" name="customized-swither"/>
+                <label for="customized-swither"/>
+              </div>
+            </div>
+        </label>
+        <div class="e-list-item e-search">
+          <input type="search" placeholder="Search"/>
         </div>
-        <div class="e-list-item e-search"><input type="search" placeholder="Search"/></div>
         <div class="e-list-item e-group-title">
           <span>Active</span>
         </div>

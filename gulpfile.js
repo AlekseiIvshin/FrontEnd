@@ -33,7 +33,7 @@ gulp.task('moveViews', function() {
 });
 
 gulp.task('moveFonts', function() {
-  gulp.src(sourcePath+'/fonts/**').pipe(gulp.dest(buildPath+'/styles'))
+  gulp.src(sourcePath+'/fonts/**').pipe(gulp.dest(buildPath+'/fonts'))
 });
 
 gulp.task('moveImages', function() {

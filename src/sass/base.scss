@@ -20,7 +20,12 @@ $cation-text-color: white;
 
 @font-face {
     font-family: RobotoRegular;
-    src: url(Roboto-Regular-webfont.woff);
+    src: url("../fonts/Roboto-Regular-webfont.woff");
+}
+
+@font-face {
+  font-family: Ionicons;
+  src: url("../fonts/ionicons.woff");
 }
 
 html {
@@ -96,7 +101,9 @@ body {
   width: 100%;
   background-color: $primary-color;
   height: $toolbar-height;
+  line-height: $toolbar-height;
   color: #FFF;
+  vertical-align: middle;
 }
 
 .e-toolbar img{
@@ -107,7 +114,6 @@ body {
 .e-toolbar__nav{
   display: inline-block;
   width: 30%;
-  padding-top: 2px;
   padding-left: 4px;
   box-sizing: border-box;
 }
@@ -126,4 +132,17 @@ body {
   text-align: right;
   box-sizing: border-box;
   padding-right: 8px;
+}
+
+.e-font-icon {
+  font-family: "Ionicons";
+  font-size: 24px;
+}
+
+.e-font-icon::before{
+  padding: 0 $default-spacing;
+}
+
+.e-toolbar__nav .e-font-icon::before{
+  content: "\f124";
 }
