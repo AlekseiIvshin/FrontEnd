@@ -5,17 +5,18 @@ $large-text-size: $medium-text-size + 6; /* Large text size for web site */
 $dark-text-color: #424242;
 $light-text-color: #9E9E9E;
 $light-text-color: #9E9E9E;
-$cation-text-color: white;
 
+
+$primary-color: #29B6F6; /* Primary colro for web site, using for toolbar(header) and other controls */
 $divider-color: #d3d3d3;
 
-$drawer-width: 280px;
+$default-spacing: 10px;
+
+$toolbar-height: 40px;
+$navigation-width: 280px;
 
 $cation-color: red;
-$primary-color: #29B6F6; /* Primary colro for web site, using for toolbar(header) and other controls */
-
-$default-spacing: 10px;
-$toolbar-height: 40px;
+$cation-text-color: white;
 
 @font-face {
     font-family: RobotoRegular;
@@ -35,7 +36,16 @@ body {
 }
 
 .e-content {
-  padding-top: $toolbar-height;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.e-content__header {
+}
+
+.e-content__body {
+  overflow-y: auto;
 }
 
 .e-list-item {
@@ -45,55 +55,18 @@ body {
   box-sizing: border-box;
 }
 
-.e-toolbar span, img{
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-
-  vertical-align: middle;
-}
-
-.e-toolbar {
-  position: fixed;
-  background-color: $primary-color;
-  height: $toolbar-height;
-  width: 100%;
-  color: #FFF;
-}
-
-.e-toolbar img{
-  width: 36px;
-  height: 36px;
-}
-
-.e-toolbar .e-drawerAndUp{
-  display: inline-block;
-  width: 30%;
-  padding-top: 2px;
-  padding-left: 4px;
-  box-sizing: border-box;
-}
-
-.e-toolbar .e-title{
-  display: inline-block;
-  font-weight: bold;
-  text-align: center;
-  width: 40%;
-  box-sizing: border-box;
-}
-
-.e-toolbar .e-menu{
-  display: inline-block;
-  width: 30%;
-  text-align: right;
-  box-sizing: border-box;
-  padding-right: 8px;
-}
-
 .e-group-title {
   font-weight: bold;
   background-color: #EEEEEE;
   border-bottom: 1px solid #E0E0E0;
+}
+
+.e-caution {
+  margin-top: $default-spacing;
+  color: $cation-text-color;
+  background-color: $cation-color;
+  border: 1px solid $cation-color;
+  text-align: center;
 }
 
 .e-name {
@@ -107,20 +80,4 @@ body {
   margin: $default-spacing; /*use margin for margin collapsing*/
   font-weight: bold;
   font-size: $medium-text-size;
-}
-
-.e-caution {
-  margin-top: $default-spacing;
-  color: $cation-text-color;
-  background-color: $cation-color;
-  border: 1px solid $cation-color;
-  text-align: center;
-}
-
-.e-drawer {
-  display: inline-block;
-  width: $drawer-width;
-  height: 100%;
-  box-sizing: border-box;
-  border-right: 1px solid $divider-color;
 }
