@@ -5,16 +5,17 @@ var sass = require('gulp-sass');
 var merge = require('merge-stream');
 var concat = require('gulp-concat');
 var rename = require('gulp-rename');
+var minifyHTML = require('gulp-minify-html');
 
 gulp.task('minify', function() {
   return gulp.src('client/js/**/*.js')
     .pipe(gulp.dest('build'));
 });
 
-gulp.task('deploy-release',['minify','deploy']);
+gulp.task('deploy-release',['minify','deploy','minify-html']);
 
 gulp.task('deploy',['sass'], function() {
-  return gulp.src(['./src/**/*','!./src/sass','!./src/sass/**'])
+  return gulp.src(['./src/**/*','!./src/views/**','!./src/sass','!./src/sass/**'])
     .pipe(gulp.dest('dist'))
 });
 
@@ -37,4 +38,15 @@ gulp.task('sass', function () {
 
 gulp.task('sass:watch', function () {
   gulp.watch('./src/sass/**/*.scss', ['sass']);
+});
+
+gulp.task('minify-html', function() {
+  var opts = {
+    conditionals: true,
+    spare:true
+  };
+
+  return gulp.src('./src/views/*.html')
+    .pipe(minifyHTML(opts))
+    .pipe(gulp.dest('./dist/views/'));
 });
