@@ -19,13 +19,17 @@ input[name="customized-checkbox"]:checked + label {
 
 .e-param {
     display: flex;
+    justify-content: space-between;
 }
 
 .e-param__name {
-  flex-basis: 60px;
-  flex-grow: 1;
+  flex-basis: 100px;
 }
 
 .e-param__value {
-  flex-grow: 2;
+  width: calc(100% - 100px)
+}
+
+.e-start-direction {
+  justify-content: flex-start;
 }
