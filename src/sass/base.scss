@@ -64,7 +64,7 @@ body {
 
 .e-group-title {
   font-weight: bold;
-  background-color: #EEEEEE;
+  background-color: #EEE;
   border-bottom: 1px solid #E0E0E0;
 }
 
@@ -94,44 +94,38 @@ body {
 }
 
 .e-toolbar {
+  padding: 0 $default-spacing;
+  box-sizing: border-box;
   width: 100%;
   background-color: $primary-color;
   height: $toolbar-height;
   line-height: $toolbar-height;
   color: #FFF;
-  vertical-align: middle;
+}
+
+.e-toolbar > div {
+  display: inline-block;
+  box-sizing: border-box;
 }
 
 .e-toolbar__nav{
-  display: inline-block;
   width: 30%;
-  padding-left: 4px;
-  box-sizing: border-box;
 }
 
 .e-toolbar__title{
-  display: inline-block;
   font-weight: bold;
   text-align: center;
   width: 40%;
-  box-sizing: border-box;
 }
 
 .e-toolbar__menu{
-  display: inline-block;
   width: 30%;
   text-align: right;
-  box-sizing: border-box;
-  padding-right: 8px;
 }
 
 .e-font-icon {
   font-family: "Ionicons";
   font-size: 24px;
-}
-
-.e-font-icon::before{
-  padding: 0 $default-spacing;
 }
 
 .e-toolbar__nav .e-font-icon::before{
