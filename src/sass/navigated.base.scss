@@ -8,18 +8,7 @@
 }
 
 .e-content {
-  height: 100%;
-  width: 100%;
-  box-sizing: border-box;
   position: absolute;
   left: $navigation-width;
   top: 0;
-}
-
-.e-content__header {
-}
-
-.e-content__body {
-  height: 100%;
-  overflow-y: auto;
 }
