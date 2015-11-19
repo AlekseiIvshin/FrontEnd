@@ -16,14 +16,14 @@ $switcher-transform: $switcher-size * 0.75;
   font-size: $medium-text-size;
 }
 
-.e-thumbnail__avatar {
+.e-member-info__avatar {
     height: $thumbnail-height;
     width: $thumbnail-height;
     box-sizing: border-box;
     border: 1px solid #E0E0E0;
 }
 
-.e-thumbnail__short-info {
+.e-member-info__short-info {
   display: inline-block;
 }
 
