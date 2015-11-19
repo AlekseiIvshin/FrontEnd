@@ -13,3 +13,20 @@
   left: $navigation-width;
   top: 0;
 }
+
+@media (min-width: 801px) and (orientation: landscape) {
+  html, body {
+    overflow: hidden;
+  }
+  .e-navigation {
+    display: inline-block;
+    position: static;
+  }
+
+  .e-content {
+    display: inline-block;
+    position: static;
+    box-sizing: border-box;
+    width: calc(100% - #{$navigation-width});
+  }
+}
