@@ -17,6 +17,10 @@ input[name="customized-checkbox"]:checked + label {
   border-color: #29B6F6;
 }
 
+input, select {
+  border: 0;
+}
+
 .e-param {
     display: flex;
     justify-content: space-between;
