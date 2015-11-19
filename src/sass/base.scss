@@ -55,6 +55,11 @@ body {
   height: calc(100% - #{$toolbar-height});
 }
 
+.e-list {
+  display: flex;
+  flex-direction: column;
+}
+
 .e-list-item {
   padding: $default-spacing;
   border-bottom: 1px solid $divider-color;
@@ -126,4 +131,21 @@ body {
 .e-font-icon {
   font-family: "Ionicons";
   font-size: 24px;
+}
+
+/*Min for portrait tablet*/
+@media screen and (min-width: 600px) {
+  .e-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .e-list  .e-list-item {
+    border: 0;
+    width: 33%;
+  }
+
+  .e-group-title {
+    border-top: 1px solid #E0E0E0;
+  }
 }

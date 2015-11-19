@@ -4,12 +4,6 @@ $thumbnail-height: 72px;
 $switcher-size: 20px;
 $switcher-transform: $switcher-size * 0.75;
 
-.e-thumbnail__avatar {
-    height: $thumbnail-height;
-    width: $thumbnail-height;
-    box-sizing: border-box;
-    border: 1px solid #E0E0E0;
-}
 
 .e-search input[type="search"] {
   display: inline-block;
@@ -20,6 +14,13 @@ $switcher-transform: $switcher-size * 0.75;
 .e-search .e-font-icon {
   color: gray;
   font-size: $medium-text-size;
+}
+
+.e-thumbnail__avatar {
+    height: $thumbnail-height;
+    width: $thumbnail-height;
+    box-sizing: border-box;
+    border: 1px solid #E0E0E0;
 }
 
 .e-thumbnail__short-info {
@@ -51,6 +52,7 @@ $switcher-transform: $switcher-size * 0.75;
 .e-switcher {
   justify-content: space-between;
   display: flex;
+  width: 100%;
 }
 
 input[name="customized-switcher"] {
@@ -87,4 +89,22 @@ input[name="customized-switcher"] + div > label {
 input[name="customized-switcher"]:checked + div> label {
   transform: translate($switcher-transform);
   border-color: $primary-color;
+}
+
+
+/*Min for portrait tablet*/
+@media screen and (min-width: 600px) {
+
+  .e-search.e-list-item {
+    width: 66%;
+  }
+
+  label[for="customized-switcher"] {
+    order: 2;
+    width: 33%;
+  }
+
+  .e-switcher.e-list-item {
+    width: 100%;
+  }
 }
