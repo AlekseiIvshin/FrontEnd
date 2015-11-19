@@ -13,7 +13,13 @@ $switcher-transform: $switcher-size * 0.75;
 
 .e-search input[type="search"] {
   display: inline-block;
-  width: 100%;
+  border: 0;
+  width: calc(100% - #{$medium-text-size});
+}
+
+.e-search .e-font-icon {
+  color: gray;
+  font-size: $medium-text-size;
 }
 
 .e-thumbnail__short-info {
@@ -31,6 +37,7 @@ $switcher-transform: $switcher-size * 0.75;
 
 .e-short-info__title {
   color: $dark-text-color;
+  font-size: $small-text-size;
   margin: 0px;
   font-weight: bold;
 }
@@ -44,16 +51,6 @@ $switcher-transform: $switcher-size * 0.75;
 .e-switcher {
   justify-content: space-between;
   display: flex;
-}
-
-.e-customized-swither {
-  padding: 0px;
-  margin: 0px;
-  border: 1px solid #CCC;
-  border-radius: $switcher-size+2;
-  width: $switcher-size+$switcher-transform+2;
-  height: $switcher-size+2;
-  box-sizing: border-box;
 }
 
 input[name="customized-switcher"] {
@@ -84,7 +81,7 @@ input[name="customized-switcher"] + div > label {
   height: $switcher-size;
   box-sizing: border-box;
   transition: all 0.3s ease-in 0s;
-  box-shadow: 1px 1px 5px grey;
+  box-shadow: 1px 1px 5px gray;
 }
 
 input[name="customized-switcher"]:checked + div> label {
