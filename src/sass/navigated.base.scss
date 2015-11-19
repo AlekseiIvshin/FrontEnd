@@ -14,6 +14,22 @@
   top: 0;
 }
 
+.ua-android {
+  .e-content__toolbar  {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .e-content__body {
+    position: absolute;
+    top: $toolbar-height;
+    left: 0;
+    right: 0;
+    height: calc(100% - #{$toolbar-height});
+  }
+}
+
 @media (min-width: 801px) and (orientation: landscape) {
   html, body {
     overflow: hidden;
@@ -28,5 +44,12 @@
     position: static;
     box-sizing: border-box;
     width: calc(100% - #{$navigation-width});
+  }
+
+  .ua-android {
+    .e-content {
+      position: relative;
+      left: 0;
+    }
   }
 }

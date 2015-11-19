@@ -15,7 +15,7 @@ gulp.task('default', ['deploy']);
 
 gulp.task('deploy-release',['minify-js','minify-html','sass','moveResources']);
 
-gulp.task('deploy',['sass','moveViews','moveResources']);
+gulp.task('deploy',['sass','moveViews','moveResources','minify-js']);
 
 gulp.task('webserver', ['deploy-release'], function() {
   gulp.src('dist')
@@ -51,8 +51,8 @@ gulp.task('sass:watch', function () {
 });
 
 gulp.task('minify-js', function() {
-  return gulp.src('client/js/**/*.js')
-    .pipe(gulp.dest('build'));
+  return gulp.src(sourcePath+'/js/*.js')
+    .pipe(gulp.dest(buildPath+'/js'));
 });
 
 gulp.task('minify-html', function() {
